@@ -30,16 +30,15 @@ $config['modules']['trackers'] = ['class' => 'idfly\trackers\Module'];
 
 1. Include tracker in to assets:
 
-    ```
+
     class AppAsset extends \yii\web\AssetBundle
-    {
-        public function init()
-        {
-            parent::init();
-            $this->js[] = \Yii::getAlias('@web') .'/trackers';
-        }
-    }
-    ```
+     {
+         public function init()
+         {
+             parent::init();
+             $this->js[] = \Yii::getAlias('@web') .'/trackers';
+         }
+     }
 
 2. Open page:
     `http://your-site/admin/settings/edit?modelName=idfly\trackers\models\TrackersSetting`
