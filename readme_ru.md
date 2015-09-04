@@ -18,7 +18,6 @@
         }
 
 4. Выполнить `composer update`
-```
 
 5. Поместить в конфиг:
 
@@ -26,7 +25,6 @@
 $config['modules']['trackers'] = ['class' => 'idfly\trackers\Module'];
 ```
 6. Подключить трекер в asset'ах:
-
 
 ```
 <?php
