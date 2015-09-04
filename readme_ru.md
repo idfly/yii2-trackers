@@ -30,18 +30,16 @@ $config['modules']['trackers'] = ['class' => 'idfly\trackers\Module'];
 1. Подключить трекер в asset'ах:
 
     ```
-    <?php
+    #!php
     
-    namespace app\assets;
-    
-    class AppAsset extends \yii\web\AssetBundle
-    {
-        public function init()
-        {
-            parent::init();
-            $this->js[] = \Yii::getAlias('@web') .'/trackers';
-        }
-    }
+         class AppAsset extends \yii\web\AssetBundle
+         {
+             public function init()
+             {
+                 parent::init();
+                 $this->js[] = \Yii::getAlias('@web') .'/trackers';
+             }
+         }
     ```
 
 2. Настройки трекера будут доступны по ссылке:
