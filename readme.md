@@ -26,7 +26,8 @@ Note: This module uses `yii2-settings` module by idfly.
 $config['modules']['trackers'] = ['class' => 'idfly\trackers\Module'];
 `
 
-6. Include tracker in to assets:
+## Usage
+1. Include tracker in to assets:
 
 ```
 <?php
@@ -43,5 +44,5 @@ class AppAsset extends \yii\web\AssetBundle
 }
 ```
 
-7. Open page:
+2. Open page:
 `http://your-site/admin/settings/edit?modelName=idfly\trackers\models\TrackersSetting`
