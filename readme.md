@@ -22,9 +22,9 @@ Note: This module uses `yii2-settings` module by idfly.
 
 5. Place to the project's configuration file:
 
-```
+`
 $config['modules']['trackers'] = ['class' => 'idfly\trackers\Module'];
-```
+`
 
 ## Usage
 
@@ -32,9 +32,9 @@ $config['modules']['trackers'] = ['class' => 'idfly\trackers\Module'];
 
     ```
     <?php
-    
+
     namespace app\assets;
-    
+
     class AppAsset extends \yii\web\AssetBundle
     {
         public function init()
