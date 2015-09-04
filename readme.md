@@ -22,9 +22,9 @@ Note: This module uses `yii2-settings` module by idfly.
 
 5. Place to the project's configuration file:
 
-```
+`
 $config['modules']['trackers'] = ['class' => 'idfly\trackers\Module'];
-```
+`
 
 6. Include tracker in to assets:
 
