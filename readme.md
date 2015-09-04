@@ -28,7 +28,6 @@ $config['modules']['trackers'] = ['class' => 'idfly\trackers\Module'];
 
 6. Include tracker in to assets:
 
-
 ```
 <?php
 
