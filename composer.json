@@ -15,7 +15,8 @@
     }
   ],
   "require": {
-    "yiisoft/yii2": "*"
+    "yiisoft/yii2": "*",
+    "idfly/yii2-settings": "*"
   },
   "autoload": {
     "psr-4": {

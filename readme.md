@@ -1,12 +1,16 @@
 # yii2-trackers
 
+Note: This module uses `yii2-settings` module by idfly.
+
 ## Set
 
-1. To the project file `composer.json` add to the `require` section:
+1. Setup module `yii2-settings`
+
+2. To the project file `composer.json` add to the `require` section:
 
       `"idfly/yii2-trackers": "dev-master"`
 
-2. To the `repositories` section:
+3. To the `repositories` section:
       ```
       {
            "type": "git",
@@ -14,11 +18,31 @@
       }
       ```
 
-3. Run `composer update`
+4. Run `composer update`
 
-4. Place to the project's configuration file:
+5. Place to the project's configuration file:
 
 ```
 $config['modules']['trackers'] = ['class' => 'idfly\trackers\Module'];
 ```
 
+6. Include tracker in to assets:
+
+
+```
+<?php
+
+namespace app\assets;
+
+class AppAsset extends \yii\web\AssetBundle
+{
+    public function init()
+    {
+        parent::init();
+        $this->js[] = \Yii::getAlias('@web') .'/trackers';
+    }
+}
+```
+
+7. Open page:
+`http://your-site/admin/settings/edit?modelName=idfly\trackers\models\TrackersSetting`
