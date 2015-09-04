@@ -31,10 +31,6 @@ $config['modules']['trackers'] = ['class' => 'idfly\trackers\Module'];
 1. Include tracker in to assets:
 
     ```
-    <?php
-
-    namespace app\assets;
-
     class AppAsset extends \yii\web\AssetBundle
     {
         public function init()
