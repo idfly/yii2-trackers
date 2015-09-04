@@ -26,22 +26,24 @@ Note: This module uses `yii2-settings` module by idfly.
 $config['modules']['trackers'] = ['class' => 'idfly\trackers\Module'];
 ```
 
-6. Include tracker in to assets:
+## Usage
 
-```
-<?php
+1. Include tracker in to assets:
 
-namespace app\assets;
-
-class AppAsset extends \yii\web\AssetBundle
-{
-    public function init()
+    ```
+    <?php
+    
+    namespace app\assets;
+    
+    class AppAsset extends \yii\web\AssetBundle
     {
-        parent::init();
-        $this->js[] = \Yii::getAlias('@web') .'/trackers';
+        public function init()
+        {
+            parent::init();
+            $this->js[] = \Yii::getAlias('@web') .'/trackers';
+        }
     }
-}
-```
+    ```
 
-7. Open page:
-`http://your-site/admin/settings/edit?modelName=idfly\trackers\models\TrackersSetting`
+2. Open page:
+    `http://your-site/admin/settings/edit?modelName=idfly\trackers\models\TrackersSetting`

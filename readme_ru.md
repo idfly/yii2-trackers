@@ -24,24 +24,25 @@
 ```
 $config['modules']['trackers'] = ['class' => 'idfly\trackers\Module'];
 ```
-6. Подключить трекер в asset'ах:
 
-```
-<?php
+## Использование
 
-namespace app\assets;
+1. Подключить трекер в asset'ах:
 
-class AppAsset extends \yii\web\AssetBundle
-{
-    public function init()
+    ```
+    <?php
+    
+    namespace app\assets;
+    
+    class AppAsset extends \yii\web\AssetBundle
     {
-        parent::init();
-        $this->js[] = \Yii::getAlias('@web') .'/trackers';
+        public function init()
+        {
+            parent::init();
+            $this->js[] = \Yii::getAlias('@web') .'/trackers';
+        }
     }
-}
-```
+    ```
 
-7. Настройки трекера будут доступны по ссылке:
-`
- http://your-site/admin/settings/edit?modelName=idfly\trackers\models\TrackersSetting
-`
+2. Настройки трекера будут доступны по ссылке:
+    `http://your-site/admin/settings/edit?modelName=idfly\trackers\models\TrackersSetting`
